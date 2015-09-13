@@ -1,5 +1,3 @@
-__author__ = 'ccaf'
-
 from django.shortcuts import render
 
 def default_return(request):
