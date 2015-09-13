@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>{{ appvar.app_name }}</title>
+</head>
+<body>
+    <h2>{{ appvar.app_name }}</h2>
+    <h3>{{ appvar.app_type }}</h3>
+
+
+{% for howtosteps in appvar.howtouse_set.all %}
+    <h4>{{ howtosteps.step_title }}</h4>
+    <h5>{{ howtosteps.step1 }}</h5>
+    <h5>{{ howtosteps.step2 }}</h5>
+    <h5>{{ howtosteps.step3 }}</h5>
+{% endfor %}
+
+
+</body>
+</html>
